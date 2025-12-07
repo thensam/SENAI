@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -58,15 +58,22 @@ body {
     color: #9b30ff;
 }
 
-
 /* cards */
-.cadastro, .cad-div {
+.cadastro,
+.cad-div {
     background-color: rgba(30, 30, 30, 0.7); /* preto com transparência */
     border-radius: 12px;
     padding: 20px;
     margin-top: 20px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/**/
+.card-header {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #6a0dad;
 }
 
 .cad-prod {
@@ -99,7 +106,7 @@ body {
 .form-control:focus {
     border-color: #9b30ff;
     outline: none;
-    box-shadow: 0 0 8px rgba(155,48,255,0.5);
+    box-shadow: 0 0 8px rgba(155, 48, 255, 0.5);
 }
 
 /* buttons */
@@ -131,13 +138,14 @@ button {
     background-color: #555;
 }
 
-.tabela, .tabela-div {
+.tabela,
+.tabela-div {
     background-color: rgba(30, 30, 30, 0.7); /* preto com transparência */
     border-radius: 12px;
     padding: 20px;
     margin-top: 20px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .table {
@@ -152,7 +160,8 @@ button {
     text-align: center;
 }
 
-.tabela-warp { /* fix pra tabela bugada no mobile*/
+.tabela-warp {
+    /* fix pra tabela bugada no mobile*/
     width: 100%;
     overflow-x: auto;
 }
