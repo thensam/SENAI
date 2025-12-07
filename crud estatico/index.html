@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud estatico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Estoque simples</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#cadastro">Cadastro</a></li>
+                <li class="nav-item"><a href="#tabela">Visualizar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <section id="cadastro" class="cadastro">
+            <h2 class="cad-prod">Cadastro de Produtos</h2>
+            <div class="cad-div">
+                <form>
+                    <div class="form-group">
+                        <label for="prod-id">ID</label>
+                        <input type="text" id="prod-id" name="prod-id" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="produto-nome">Nome do Produto:</label>
+                        <input type="text" id="produto-nome" name="produto-nome" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="produto-quantidade">Quantidade:</label>
+                        <input type="number" id="produto-quantidade" required min="0" name="produto-quantidade" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="produto-validade">Validade</label>
+                        <input type="date" id="produto-validade" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="protduto-status">Status</label>
+                        <select id="protduto-status" class="form-control">
+                            <option value="disponivel">Disponivel</option>
+                            <option value="indisponivel">Indisponivel</option>
+                            <option value="vencido">Vencido</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-confirm">Confirmar</button>
+                    <button type="reset" class="btn-clear">Limpar</button>
+                </form>
+            </div>
+        </section>
+
+        <!--copiei do professor daqui pra baixo-->
+
+            <div style="height: 30px;"></div>
+
+            <h6 style="text-align: center; color: white;">Dados cadastrados (estático)</h6>
+        <section id="tabela" class="tabela">
+            <h2 class="card-header"> Dados Cadastrados</h2>
+            <div class="tabela-div">
+                <div class="tabela-warp">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Qtd</th>
+                            <th>Validade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Leite Integral</td>
+                            <td>50</td>
+                            <td>2026-01-20</td>
+                            <td class="status-disponivel">Disponível</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Pão Francês</td>
+                            <td>120</td>
+                            <td>2025-12-08</td>
+                            <td class="status-esgotado">Esgotado</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Refrigerante 2L</td>
+                            <td>5</td>
+                            <td>2025-11-01</td>
+                            <td class="status-vencido">Vencido</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    </div>
+</body>
+</html>
